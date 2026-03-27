@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGAPAI — Agente IA para Clínicas Dentales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">🦷 <span>AGAPAI</span> Dental AI</a>
+      <a href="#contacto" class="btn btn-sm">Solicitar Demo</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge">🤖 Inteligencia Artificial Autónoma</div>
+      <h1>Tu clínica dental nunca<br>pierde otro paciente</h1>
+      <p class="hero-sub">Agente de IA que captura, cualifica y agenda citas automáticamente —<br>24/7 por WhatsApp, Instagram y Web. Sin perder un solo lead.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">80-120</span>
+          <span class="stat-label">Leads/mes gestionados</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">&lt;30s</span>
+          <span class="stat-label">Tiempo de respuesta</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Disponibilidad total</span>
+        </div>
+      </div>
+      <a href="#contacto" class="btn btn-lg">Agendar Llamada de Descubrimiento →</a>
+    </div>
+  </header>
+
+  <!-- PROBLEMA -->
+  <section class="section problem">
+    <div class="container">
+      <div class="section-label">El Problema</div>
+      <h2>Tu equipo de recepción está saturado.<br>Cada minuto sin responder = una cita perdida.</h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon">⏰</div>
+          <h3>Respuestas lentas</h3>
+          <p>Los leads llegan por WhatsApp, Instagram y web. Tu equipo no da abasto y los pacientes se van con la competencia.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📉</div>
+          <h3>Leads sin seguimiento</h3>
+          <p>Sin un sistema automatizado, los leads fríos nunca se reactivan. Dinero invertido en marketing que se pierde.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🔄</div>
+          <h3>Procesos manuales</h3>
+          <p>Agendar citas, confirmar horarios, enviar recordatorios — todo manual. Tu equipo debería atender pacientes, no gestionar WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUCIÓN -->
+  <section class="section solution">
+    <div class="container">
+      <div class="section-label">La Solución</div>
+      <h2>Un agente de IA que trabaja como tu mejor recepcionista — pero nunca descansa</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-num">01</div>
+          <h3>Captación y Cualificación Inteligente</h3>
+          <p>El agente interactúa con cada lead en WhatsApp Business y formularios web. Recoge información clave: síntomas, urgencia, tipo de seguro, disponibilidad. Cualifica automáticamente.</p>
+          <div class="feature-tag">WhatsApp Business API · Formularios Web</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">02</div>
+          <h3>Conversación Natural 24/7</h3>
+          <p>Conversaciones fluidas y humanas con pacientes potenciales. Entiende contexto, responde preguntas sobre tratamientos, precios y disponibilidad. Siempre amable, siempre preciso.</p>
+          <div class="feature-tag">LLMs Avanzados · RAG · Contexto Clínico</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">03</div>
+          <h3>Agenda Automática</h3>
+          <p>Integración directa con Google Calendar y el sistema de gestión de pacientes. El agente verifica disponibilidad, propone horarios y confirma citas — sin intervención humana.</p>
+          <div class="feature-tag">Google Calendar · Sistema de Gestión</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">04</div>
+          <h3>Scoring y CRM Automático</h3>
+          <p>Cada lead recibe una prioridad (alta, media, baja) basada en urgencia, valor del tratamiento y probabilidad de conversión. Se envía automáticamente a HubSpot con toda la información.</p>
+          <div class="feature-tag">HubSpot CRM · Lead Scoring · Pipeline</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">05</div>
+          <h3>Seguimiento y Recordatorios</h3>
+          <p>Sistema de follow-up automático para leads que no responden. Recordatorios de citas 24h y 1h antes. Reducción drástica de no-shows.</p>
+          <div class="feature-tag">Secuencias Automáticas · Recordatorios</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">06</div>
+          <h3>Hand-off Inteligente a Humanos</h3>
+          <p>El agente sabe cuándo escalar: citas complejas, quejas, emergencias. Transfiere la conversación con todo el contexto al equipo humano. Sin fricciones.</p>
+          <div class="feature-tag">Escalamiento · Contexto Completo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARQUITECTURA -->
+  <section class="section arch">
+    <div class="container">
+      <div class="section-label">Arquitectura Técnica</div>
+      <h2>Stack probado en producción</h2>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <h4>🧠 Motor de IA</h4>
+          <p>LLMs de última generación (GPT-4o / Claude 3.5) con RAG para conocimiento específico de la clínica. Respuestas precisas y contextuales.</p>
+        </div>
+        <div class="tech-card">
+          <h4>⚡ Orquestación</h4>
+          <p>LangGraph / CrewAI para flujos autónomos multi-paso. El agente decide, actúa y aprende.</p>
+        </div>
+        <div class="tech-card">
+          <h4>🔗 Integraciones</h4>
+          <p>WhatsApp Business API, Google Calendar, HubSpot CRM. Todo conectado con n8n para workflows robustos.</p>
+        </div>
+        <div class="tech-card">
+          <h4>🚀 Infraestructura</h4>
+          <p>Deploy en producción con baja latencia. Manejo robusto de errores. Monitoreo 24/7. Escalable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLUJO -->
+  <section class="section flow">
+    <div class="container">
+      <div class="section-label">Flujo del Paciente</div>
+      <h2>De lead a cita confirmada en minutos</h2>
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-num">1</div>
+          <h3>Lead entra</h3>
+          <p>Por WhatsApp, Instagram o formulario web</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-num">2</div>
+          <h3>IA cualifica</h3>
+          <p>Preguntas inteligentes sobre síntomas y necesidades</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-num">3</div>
+          <h3>Scoring</h3>
+          <p>Prioridad asignada y enviado a HubSpot</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-num">4</div>
+          <h3>Cita agendada</h3>
+          <p>Google Calendar + confirmación + recordatorio</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE AGAPAI -->
+  <section class="section about">
+    <div class="container">
+      <div class="section-label">Sobre Nosotros</div>
+      <h2>AGAPAI — Inteligencia Artificial que transforma negocios</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Somos una empresa especializada en <strong>asistentes de IA conversacionales, automatización inteligente y transformación digital</strong>. No somos teóricos — construimos agentes que ya están en producción.</p>
+          <div class="credentials">
+            <div class="credential">🏛️ Destacados en revista del Congreso de la República de Colombia</div>
+            <div class="credential">🎤 Ponentes en la Primera Cumbre de IA de Latinoamérica</div>
+            <div class="credential">🎓 Docentes en Universidad de Cartagena y Universidad Comfenalco</div>
+            <div class="credential">☁️ Respaldados por AWS, Notion, Supabase y Fireworks AI Startup Programs</div>
+          </div>
+        </div>
+        <div class="about-proof">
+          <h4>Clientes en producción:</h4>
+          <ul>
+            <li><strong>La Qatrie</strong> (Cali) — Chat IA + asistente de voz para restaurante</li>
+            <li><strong>Chikilin</strong> (México) — Clon de IA para influencer</li>
+            <li><strong>IPS Fonoaudiológica</strong> — Agente IA para recolección de datos + agendamiento</li>
+            <li><strong>Vero Nova Group</strong> — WhatsApp automation + Meta Ads</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVERSIÓN -->
+  <section class="section pricing">
+    <div class="container">
+      <div class="section-label">Inversión</div>
+      <h2>Propuesta de implementación</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-phase">Fase 1 — MVP (4-6 semanas)</div>
+          <h3>Agente Core</h3>
+          <ul>
+            <li>✅ Captación y cualificación por WhatsApp</li>
+            <li>✅ Conversación natural con LLM</li>
+            <li>✅ Integración Google Calendar</li>
+            <li>✅ Scoring básico de leads</li>
+            <li>✅ Integración HubSpot CRM</li>
+            <li>✅ Dashboard de métricas</li>
+          </ul>
+          <div class="pricing-note">Incluye: setup, entrenamiento con datos de la clínica, testing y deploy en producción.</div>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-phase">Fase 2 — Expansión (2-3 semanas)</div>
+          <h3>Automatización Total</h3>
+          <ul>
+            <li>✅ Todo de Fase 1</li>
+            <li>✅ Seguimiento automático multi-canal</li>
+            <li>✅ Recordatorios inteligentes de citas</li>
+            <li>✅ Hand-off a humanos con contexto</li>
+            <li>✅ Captación desde Instagram DMs</li>
+            <li>✅ Reporting avanzado</li>
+          </ul>
+          <div class="pricing-note">Incluye: optimización basada en datos reales del MVP + expansión de canales.</div>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-phase">Ongoing — Soporte</div>
+          <h3>Mantenimiento & Mejora</h3>
+          <ul>
+            <li>✅ Monitoreo 24/7 del agente</li>
+            <li>✅ Actualizaciones de modelos</li>
+            <li>✅ Optimización continua de prompts</li>
+            <li>✅ Soporte técnico prioritario</li>
+            <li>✅ Reportes mensuales de rendimiento</li>
+            <li>✅ Iteraciones basadas en feedback</li>
+          </ul>
+          <div class="pricing-note">Retainer mensual con SLA definido.</div>
+        </div>
+      </div>
+      <p class="pricing-cta">Los valores específicos se presentarán en la llamada de descubrimiento, adaptados a las necesidades exactas de su clínica.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta" id="contacto">
+    <div class="container">
+      <h2>¿Listo para que tu clínica nunca pierda otro paciente?</h2>
+      <p>Agenda una llamada de 30 minutos. Sin compromiso. Te mostramos exactamente cómo funcionará el agente con tu flujo actual.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/573001234567?text=Hola%2C%20me%20interesa%20el%20agente%20IA%20para%20mi%20cl%C3%ADnica%20dental" class="btn btn-lg btn-whatsapp">💬 WhatsApp Directo</a>
+        <a href="mailto:contacto@agapai.com.co?subject=Propuesta%20Agente%20IA%20Clínica%20Dental" class="btn btn-lg btn-outline">✉️ Enviar Email</a>
+      </div>
+      <div class="cta-info">
+        <p>📧 contacto@agapai.com.co &nbsp;|&nbsp; 🌐 agapai.com.co &nbsp;|&nbsp; NIT: 901829672-7</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 AGAPAI SAS — Inteligencia Artificial que transforma negocios</p>
+    </div>
+  </footer>
+
+</body>
+</html>
