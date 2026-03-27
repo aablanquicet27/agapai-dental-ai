@@ -1,3 +1,39 @@
+const CHART_HEIGHT = 160
+
+function BarChart({ data, maxVal }: { data: Array<{ day: string; leads: number; citas: number }>; maxVal: number }) {
+  return (
+    <div className="flex items-end gap-3 h-48">
+      {data.map((d) => {
+        const leadsHeight = Math.round((d.leads / maxVal) * CHART_HEIGHT)
+        const citasHeight = Math.round((d.citas / maxVal) * CHART_HEIGHT)
+        return (
+          <div key={d.day} className="flex-1 flex flex-col items-center gap-1">
+            <div className="w-full flex gap-1 items-end justify-center h-40">
+              <div
+                className="w-5 bg-brand-200 rounded-t"
+                style={makeHeight(leadsHeight)}
+              />
+              <div
+                className="w-5 bg-brand-600 rounded-t"
+                style={makeHeight(citasHeight)}
+              />
+            </div>
+            <span className="text-xs text-gray-400">{d.day}</span>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+function makeHeight(px: number): React.CSSProperties {
+  return { height: px + 'px' }
+}
+
+function makeWidth(pct: number): React.CSSProperties {
+  return { width: pct + '%' }
+}
+
 export default function Analytics() {
   const weeklyData = [
     { day: 'Lun', leads: 15, citas: 8 },
@@ -54,23 +90,7 @@ export default function Analytics() {
       <div className="grid grid-cols-2 gap-6 mb-6">
         <div className="bg-white rounded-xl p-6 border border-gray-100">
           <h3 className="font-semibold mb-6">Leads vs Citas por Día</h3>
-          <div className="flex items-end gap-3 h-48">
-            {weeklyData.map((d) => (
-              <div key={d.day} className="flex-1 flex flex-col items-center gap-1">
-                <div className="w-full flex gap-1 items-end justify-center" style= height: '160px' >
-                  <div
-                    className="w-5 bg-brand-200 rounded-t"
-                    style={{ height: `${(d.leads / maxLeads) * 100}%` }}
-                  />
-                  <div
-                    className="w-5 bg-brand-600 rounded-t"
-                    style={{ height: `${(d.citas / maxLeads) * 100}%` }}
-                  />
-                </div>
-                <span className="text-xs text-gray-400">{d.day}</span>
-              </div>
-            ))}
-          </div>
+          <BarChart data={weeklyData} maxVal={maxLeads} />
           <div className="flex gap-4 mt-4 justify-center text-xs text-gray-500">
             <span className="flex items-center gap-1">
               <span className="w-3 h-3 bg-brand-200 rounded" /> Leads
@@ -93,7 +113,7 @@ export default function Analytics() {
                   </span>
                 </div>
                 <div className="h-3 bg-gray-100 rounded-full overflow-hidden">
-                  <div className={`h-full rounded-full ${s.color}`} style={{ width: `${s.pct}%` }} />
+                  <div className={`h-full rounded-full ${s.color}`} style={makeWidth(s.pct)} />
                 </div>
               </div>
             ))}
@@ -121,7 +141,7 @@ export default function Analytics() {
                 <td className="py-3">
                   <div className="flex items-center gap-2">
                     <div className="h-2 w-20 bg-gray-100 rounded-full overflow-hidden">
-                      <div className="h-full bg-brand-500 rounded-full" style={{ width: `${t.convRate}%` }} />
+                      <div className="h-full bg-brand-500 rounded-full" style={makeWidth(t.convRate)} />
                     </div>
                     <span className="text-gray-400">{t.convRate}%</span>
                   </div>
