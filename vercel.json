@@ -1,7 +1,5 @@
 {
-  "buildCommand": "",
-  "outputDirectory": ".",
-  "cleanUrls": true,
+  "framework": "nextjs",
   "headers": [
     {
       "source": "/(.*)",
